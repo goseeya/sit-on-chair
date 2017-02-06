@@ -1,0 +1,611 @@
+
+@font-face {
+	font-family: 'Raleway';
+	src: url('../fonts/Raleway-Regular.woff2') format('woff2');
+	src: url('../fonts/Raleway-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+/*Reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*Koniec resetu*/
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+
+nav {
+  width: 100%;
+  height: 50px;
+  background: black;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.container {
+  width: 1200px;
+	margin: 0 auto;
+}
+
+span {
+  color: #2FC49C;
+}
+
+nav p {
+  margin-left: 20px;
+  float: left;
+  text-align: center;
+  line-height: 50px;
+}
+
+nav ul {
+  margin-right: 20px;
+  float: right;
+  line-height: 50px;
+}
+
+nav ul li {
+  display: inline;
+	text-decoration: none;
+  padding: 10px;
+}
+
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+
+.list1 {
+	width:100px;
+	height: 80px;
+	background-color: black;
+	z-index: 2;
+	margin-top: 10px;
+	margin-left: 900px;
+	position: absolute;
+}
+
+.list1-inside {
+	width: 40px;
+	height: 40px;
+	background-color: black;
+	z-index: 3;
+	transform:rotate(45deg);
+	/*transform: -webkit-transform:rotate(45deg);
+  transform: -moz-transform:rotate(45deg);
+	transform: -o-transform:rotate(45deg);*/
+	/*padding-left: 40px;*/
+	margin-left: 30px;
+	position: absolute;
+}
+
+.list1 > ul {
+	text-decoration: none;
+	color: white;
+	font-size: 12px;
+	line-height: 25px;
+	padding-left: 10px;
+	padding-top: 3px;
+	z-index: 5;
+	position: absolute;
+}
+
+/*.list1 > ul li {
+	text-decoration: none !important;
+}
+.list2 > ul li {
+	text-decoration: none;
+}
+.list3 > ul li {
+	text-decoration: none;
+}*/
+
+/*.list2 {
+	width:100px;
+	height: 80px;
+	background-color: black;
+	z-index: 2;
+	margin-top: 10px;
+	margin-left: 1000px;*/
+	/*position: absolute;*/
+/*}*/
+
+/*.list2-inside {
+	width: 40px;
+	height: 40px;
+	background-color: black;
+	z-index: 3;
+	transform:rotate(45deg);*/
+	/*transform: -webkit-transform:rotate(45deg);
+  transform: -moz-transform:rotate(45deg);
+	transform: -o-transform:rotate(45deg);*/
+	/*padding-left: 40px;*/
+	/*margin-left: 30px;*/
+	/*margin-top: -10px;*/
+
+	/*padding-bottom: 85px;*/
+	/*position: absolute;*/
+/*}*/
+/*.list2 > ul {
+	text-decoration: none;
+	color: white;
+	font-size: 12px;
+	line-height: 25px;
+	padding-left: 10px;
+	padding-top: 3px;
+	z-index: 5;
+	position: absolute;
+}*/
+
+.black-chair {
+  height: 500px;
+  background: rgba(255,255,255,1);
+	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 40%, rgba(239,239,239,1) 90%, rgba(237,237,237,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(40%, rgba(246,246,246,1)), color-stop(90%, rgba(239,239,239,1)), color-stop(100%, rgba(237,237,237,1)));
+	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 40%, rgba(239,239,239,1) 90%, rgba(237,237,237,1) 100%);
+	background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 40%, rgba(239,239,239,1) 90%, rgba(237,237,237,1) 100%);
+	background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 40%, rgba(239,239,239,1) 90%, rgba(237,237,237,1) 100%);
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 40%, rgba(239,239,239,1) 90%, rgba(237,237,237,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=0 );
+}
+
+.next-to{
+  float: left;
+  width: 580px;
+  margin-top: 100px;
+}
+
+.next-to p{
+	padding-right: 130px;
+	text-align: center;
+}
+
+
+.next-to h1 {
+  font-size: 30px;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+	padding-left: 80px;
+}
+
+.next-to button {
+  margin-top: 100px;
+  text-transform: uppercase;
+  width: 200px;
+  height: 40px;
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+  background-color: #2FC49C;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 8px;
+  margin-left: 120px;
+  border: none;
+}
+
+.clearfix:: before, clearfix::after {
+ clear:both;
+ content: "";
+ display: table;
+ }
+
+.right {
+  margin-right: 20px;
+}
+
+.left-arrow {
+	width: 45px;
+  margin-left: 50px;
+  padding-top: 100px;
+	float: left;
+}
+
+.right-arrow {
+	width: 45px;
+	margin-right: 50px;
+  margin-top: -60px;
+	float: right;
+}
+
+/*---SEKCJA Z KRZESŁEM, DZIECKIEM, TEKSTEM---*/
+
+.img-left {
+  margin: 50px 10px 10px 50px;
+  width: 300px;
+  height: 200px;
+  background-image: url("../images/box1_img.jpg");
+  background-repeat: no-repeat;
+  float: left;
+}
+.img-centre {
+  margin: 50px 10px 10px 50px;
+  width: 300px;
+  height: 200px;
+  background-image: url("../images/box2_img.jpg");
+  background-repeat: no-repeat;
+  float: left;
+}
+
+.img-text {
+  margin: 50px 10px 5px 50px;
+  width: 300px;
+  height: 200px;
+  background-repeat: no-repeat;
+  float: left;
+  padding: 5px;
+  border: 1px solid silver;
+  box-sizing: content-box;
+	font-size: 13px;
+	color: gray;
+	font-weight: 600;
+	padding-top: 25px;
+	padding-left: 20px;
+	padding-right: 20px;
+	line-height: 18px;
+}
+
+.img-text h2 {
+	color: black;
+	font-size: 14px;
+}
+
+.clair-mar {
+  width: 100%;
+  height: 52px;
+  background-color: rgba(255, 255, 255, 0.35);
+  margin-top: 140px;
+  font-weight: 800;
+  font-size: 13px;
+	padding-left: 20px;
+	padding-top: 10px;
+}
+
+.underline {
+	width: 135px;
+	border: 3px solid #2FC49C;
+	margin-top: 0px;
+	padding-left: 17px;
+}
+
+.underline-text {
+	width: 135px;
+	border: 3px solid #2FC49C;
+	margin-top: 0px;
+	padding-left: 17px;
+	margin-bottom: 10px;
+}
+
+
+/*----------SEKCJA Z CENAMI----------*/
+.prices {
+	height: 700px;
+	background-color: #f5f5ef;
+	margin-top: 350px;
+}
+
+.prices-top {
+	text-transform: uppercase;
+	font-size: 13;
+	padding-top: 30px;
+	padding-bottom: 5px;
+}
+
+.prices p {
+	text-transform: uppercase;
+	font-size: 13;
+	padding-top: 30px;
+}
+
+.prices,  .underline-prices {
+	padding-left: 40px;
+}
+
+.underline-prices {
+	width: 300px;
+	border: 3px solid #2FC49C;
+	margin-top: 0px;
+}
+
+/*---SEKCJA Z CENAMI DO TRZECH PLANÓW---*/
+
+.centre {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #ccccb3;
+  margin: 0 auto;
+  margin-top: 12px;
+}
+
+.boxes h1 {
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 20px;
+  font-weight: 600;
+	color: #2FC49C;
+	font-size: 15px;
+}
+
+.price {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+	border: 1px solid #ccccb3;
+	position: absolute;
+	margin-left: 100px;
+	margin-top: 20px;
+	top: 35px;
+	background-color: white;
+}
+
+.main-price {
+	margin-top: 10px;
+	font-size: 30px;
+	color: #bfbfbf;
+	font-weight: bolder;
+	text-align: center;
+	line-height: 50px;
+}
+
+sup {
+	font-size: 15px;
+}
+
+.price p {
+	text-transform: uppercase;
+	font-size: 10px;
+  color: red;
+	text-align: center;
+	color: #bfbfbf;
+	margin-top: -34px;
+	font-weight: bolder;
+}
+
+.boxes ul {
+	line-height: 30px;
+	text-align: center;
+	font-size: 16px;
+	margin-top: 140px;
+	display: block;
+	margin-left: 0;
+	padding-left: 0;
+	list-style: none;
+}
+
+.boxes ul li:nth-child(2n+1) {
+	background-color: #e6e6e6;
+}
+
+.boxes ul li:nth-child(2n+2) {
+	background-color: #f2f2f2;
+}
+
+.boxes li {
+	color: #8c8c8c;
+}
+
+.big{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+	border: 1px solid #ccccb3;
+	position: absolute;
+	right: 40%;
+	top: -35px;
+	background-color: white;
+}
+
+.three-boxes button {
+	  height: 40px;
+  	width: 160px;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin-left: 70px;
+		text-transform: uppercase;
+		background-color: #2FC49C;
+		border-radius: 10px;
+		font-weight: 400;
+		padding: 8px;
+		bottom: 15px;
+		position: absolute;
+}
+
+
+.boxes {
+  float: left;
+  width: 300px;
+  height: 450px;
+  border: 1px solid #ccccb3;
+  position: relative;
+  margin-right: 50px;
+	margin-left: 30px;
+  margin-top: 100px;
+	background-color: #f9f9eb;
+}
+
+.boxes:hover {
+	background-color: #2FC49C;
+  color: white;
+	border: none;
+}
+
+.boxes button:hover {
+	color: #2FC49C;
+	background-color: white;
+}
+
+.big:hover {
+	background-color: #2FC49C;
+	border: none;
+}
+
+.centre:hover {
+	background-color: white;
+}
+
+.main-price:hover {
+	color: #2FC49C;
+}
+
+.price p:hover {
+	color: #2FC49C;
+}
+
+
+/*---SEKCJA Z FORMULARZEM---*/
+
+
+.form {
+	height: 550px;
+	margin-top: 630px;
+}
+
+.contact-top {
+	text-transform: uppercase;
+	font-size: 13;
+	padding-bottom: 5px;
+}
+
+.underline-contact {
+	padding-left: 40px;
+	width: 300px;
+	border: 3px solid #2FC49C;
+	margin-bottom: 20px;
+}
+
+.form-left {
+	width: 400px;
+	float: left;
+}
+
+.form-right {
+	width: 600px;
+	float: right;
+}
+
+.form-right img {
+	float: left;
+	margin-left: 120px;
+}
+.form-left input {
+	height: 70px;
+	border: 1px solid #2FC49C;
+	padding: 8px;
+	width: 500px;
+	font-size: 22px;
+	color: lightgray;
+	font-weight: lighter;
+	font-family: "Raleway", sans-serif;
+}
+
+textarea {
+	border: 1px solid #2FC49C;
+	padding: 8px;
+	width: 500px;
+	font-size: 22px;
+	font-weight: lighter;
+	font-family: "Raleway", sans-serif;
+}
+
+textarea {
+	resize: none;
+	border: 1px solid #2FC49C;
+	font-style: inherit;
+	font-family: "Raleway", sans-serif;
+}
+
+.check-box {
+	margin-right: 280px;
+	margin-top: 240px;
+	position: relative;
+  color: #ccccb3;
+}
+
+label {
+	width: 200px;
+	font-size: 20px;
+	font-weight: lighter;
+	font-family: "Raleway", sans-serif;
+	color: lightgray;
+	/*margin-right: -90px;*/
+	margin-left: -80px;
+	margin-top: 50px;
+	position: absolute;
+
+}
+
+
+#agree {
+	margin-left: 140px;
+	width: 50px;
+	height: 50px;
+  color: #2FC49C;
+  margin-top: 50px;
+	margin-right: 100px;
+	float: left;
+  display: inline-block;
+}
+
+/*input[type="checkbox"]{
+	background-color: white;
+}*/
+
+.submit {
+  margin-top: 70px;
+  text-transform: uppercase;
+  width: 350px;
+  height: 60px;
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+  background-color: #2FC49C;
+  font-size: 30px;
+  font-weight: 700;
+	font-family: "Raleway", sans-serif;
+  padding: 12px;
+  margin-left: 120px;
+  border: none;
+}
+
+
+/*-----STOPKA-----*/
+
+
+footer {
+	width: 100%;
+  height: 80px;
+  color: #ccccb3;
+  font-weight: bold;
+	margin-top: 200px;
+}
+
+.copyright {
+	float: left;
+  color: #ccccb3;
+}
+
+.icons {
+	float: left;
+	margin-top: -10px;
+	margin-left: 300px;
+}
+
+.logo {
+	font-weight: 500;
+	text-transform: uppercase;
+	float: right;
+  color: #ccccb3;
+	margin-right: 100px;
+}
