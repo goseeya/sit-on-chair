@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="container">
   <header>
   <nav>
     <p>
@@ -14,7 +13,7 @@
     </p>
     <ul>
       <li>
-        <a href="#" class="about">o firmie</a>
+        <a href="#" id="about">o firmie</a>
       </li>
       <li>
         <a href="#">galeria</a>
@@ -25,10 +24,10 @@
     </ul>
   </nav>
   </header>
-  <div class="list1">
+  <div class="list1 container" id = 'list1'>
     <div class="list1-inside">
     </div>
-      <ul>
+      <ul class = 'ins'>
         <li>
           Aktualności
         </li>
@@ -40,55 +39,38 @@
         </li>
       </ul>
   </div>
-  <!-- <div class="list2">
-    <div class="list2-inside">
-    </div>
-      <ul>
-        <li>
-        </li>
-        <li>
-        </li>
-        <li>
-        </li>
-      </ul>
-  </div> -->
-  <!-- <div class="list3">
-    <div class="list3-inside">
-    </div>
-      <ul>
-        <li>
-        </li>
-        <li>
-        </li>
-        <li>
-        </li>
-      </ul>
-  </div> -->
   <section class="black-chair clearfix">
-    <div class="next-to right">
-      <div class="black">
-        <img class="left-arrow" src="./svg/arrows.svg"/>
-        <img src="./images/black_chair.png"/>
+    <div class="container">
+      <div class="next-to right">
+        <div class="black">
+          <img class="left-arrow" id='left-arrow' src="./svg/arrows.svg"/>
+          <ul class='slider'>
+            <li><img src="./images/black_chair.png"/></li>
+            <li><img src="./images/orange.png"/></li>
+            <li><img src="./images/red.png"/></li>
+          </ul>
+        </div>
       </div>
-    </div>
-    <div class="next-to">
-      <h1>sit <span>on</span> our <span>chair</span></h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      </p>
-      <button>zobacz więcej</button>
-      <img class="right-arrow" src="./svg/right-arrow.svg"/>
-    </div>
+      <div class="next-to">
+        <h1>sit <span>on</span> our <span>chair</span></h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+        <button>zobacz więcej</button>
+        <img class="right-arrow" id='right-arrow' src="./svg/right-arrow.svg"/>
+      </div>
+  </div>
   </section>
   <section class="triple clearfix">
-    <article class="img-left">
+   <div class="container">
+    <article class="img-left" id='img-left'>
       <div class="clair-mar">
         Chair CLAIR
         <div class="underline">
         </div>
       </div>
     </article>
-    <article class="img-centre">
+    <article class="img-centre" id='img-centre'>
       <div class="clair-mar">
         Chair MARGARITA
         <div class="underline">
@@ -107,8 +89,10 @@
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
       </p>
     </article>
+   </div>
   </section>
   <section class="prices clearfix">
+   <div class="container">
     <p class="prices-top">
       cennik
     </p>
@@ -203,7 +187,78 @@
       </div>
     </a>
   </div>
-   <!-- <p>Testowy paragraf</p> -->
+</div>
+</section>
+   <section class="application ">
+       <div class="main_width container">
+           <section class="choice_part inline">
+               <header>
+                   <h3>SKOMPONUJ SWOJE KRZESŁO</h3>
+                   <span class="green_bell"></span>
+               </header>
+
+               <div class="form">
+                   <div class="drop_down_list">
+                       <span class="list_label" id='rodzaj'>Wybierz rodzaj</span>
+                       <span class="list_arrow"></span>
+                       <ul class="list_panel">
+                           <li>Clair</li>
+                           <li>Margarita</li>
+                           <li>Selena</li>
+                       </ul>
+                   </div>
+                   <div class="drop_down_list">
+                       <span class="list_label" id='kolor'>Wybierz kolor</span>
+                       <span class="list_arrow"></span>
+                       <ul class="list_panel">
+                           <li>Czerwony</li>
+                           <li>Czarny</li>
+                           <li>Pomarańczowy</li>
+                       </ul>
+                   </div>
+                   <div class="drop_down_list">
+                       <span class="list_label" id='material'>Wybierz materiał</span>
+                       <span class="list_arrow"></span>
+                       <ul class="list_panel">
+                           <li>Tkanina</li>
+                           <li>Skóra</li>
+                       </ul>
+                   </div>
+                   <div class="checkbox check-box-ad">
+                       <input type="checkbox" id="transport" data-transport-price="200">
+                       <label for="transport">Transport</label>
+                   </div>
+               </div>
+           </section>
+           <section class="image_part inline">
+               <img src="images/red_chair.png">
+           </section>
+           <section class="summary_part inline">
+               <header class="align_right">
+                   <h3>PODSUMOWANIE</h3>
+                   <span class="green_bell"></span>
+               </header>
+               <div class="summary_panel">
+                   <div class="panel_left">
+                       <h4 class="title">Twój fotel</h4>
+                       <span class="color"></span>
+                       <span class="pattern"></span>
+                       <span class="transport"></span>
+                   </div>
+                   <div class="panel_right">
+                       <h4 class="title value"></h4>
+                       <span class="color value"></span>
+                       <span class="pattern value"></span>
+                       <span class="transport value"></span>
+                   </div>
+                   <div class="sum_label">SUMA</div>
+                   <div class="sum"><strong></strong><strong> zł</strong></div>
+               </div>
+               <a href="" class="green_button">Zamawiam</a>
+           </section>
+       </div>
+   </section>
+<div class="container">
   <div>
     <section class="form clearfix">
       <p class="contact-top">
@@ -217,10 +272,8 @@
             placeholder="Imię"
             name="first-name" id="name">
             <br /><br />
-            <!-- <label for="email">E-mail</label> -->
             <input type="email" name="email" placeholder="email" id="email">
             <br /><br />
-            <!-- <label for"message">Informacja o sobie</label> -->
             <textarea rows="10" cols="40" name="message" id="message" placeholder="Wiadomość"></textarea>
           </div>
           <div class="form-right">
@@ -234,7 +287,9 @@
         </form>
       </div>
     </section>
-    <footer class="clearfix">
+  </div>
+  </div>
+    <footer class="clearfix container">
       <div class="copyright">
         Copyright 2014 | All Rights Reserved. - Sit On Chair
       </div>
@@ -256,6 +311,6 @@
         sit <strong>on</strong> chair
       </div>
     </footer>
-  </div>
 </body>
+<script src='main.js'></script>
 </html>
