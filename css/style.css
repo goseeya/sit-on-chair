@@ -30,6 +30,7 @@ nav {
 .container {
   width: 1200px;
 	margin: 0 auto;
+	box-sizing: border-box;
 }
 
 span {
@@ -50,7 +51,7 @@ nav ul {
 	text-decoration: none;
 }
 
-nav ul li {
+nav > ul > li {
   display: inline;
 	text-decoration: none;
   padding: 10px;
@@ -73,7 +74,6 @@ a {
 	background-color: black;
 	z-index: 2;
 	margin-top: 10px;
-	margin-left: 1450px;
 	position: absolute;
 }
 
@@ -81,7 +81,7 @@ a {
 	width: 40px;
 	height: 40px;
 	background-color: black;
-	z-index: 3;
+	z-index: -3;
 	transform:rotate(45deg);
 	margin-left: 30px;
 	position: absolute;
@@ -89,13 +89,20 @@ a {
 
 .ins {
 	list-style-type: none;
+	font-size: 12px;
+	line-height: 25px;
+	padding-left: 5px;
+	padding-top: 3px;
+	z-index: 5;
+	position: absolute;
+}
 }
 
 .ins li {
 	list-style-type: none;
 }
 
-.list1 > ul {
+.list1 ul {
 	text-decoration: none;
 	color: white;
 	font-size: 12px;
@@ -406,35 +413,10 @@ sup {
 	margin-left: 30px;
   margin-top: 100px;
 	background-color: #f9f9eb;
+	box-sizing: border-box;
 }
 
-.boxes:hover {
-	background-color: #2FC49C;
-  color: white;
-	border: none;
-}
 
-.boxes button:hover {
-	color: #2FC49C;
-	background-color: white;
-}
-
-.big:hover {
-	background-color: #2FC49C;
-	border: none;
-}
-
-.centre:hover {
-	background-color: white;
-}
-
-.main-price:hover {
-	color: #2FC49C;
-}
-
-.price p:hover {
-	color: #2FC49C;
-}
 
 /*---DODATKOWE---*/
 
@@ -752,7 +734,7 @@ label {
 	font-weight: lighter;
 	font-family: "Raleway", sans-serif;
 	color: #cecece;
-	margin-left: -80px;
+	/*margin-left: -80px;*/
 	margin-top: 50px;
 	position: absolute;
 
@@ -804,7 +786,7 @@ footer {
 .copyright {
 	float: left;
   color: #ccccb3;
-	margin-left: 50px;
+	margin-left: 120px;
 }
 
 .icons {
@@ -818,5 +800,5 @@ footer {
 	text-transform: uppercase;
 	float: right;
   color: #ccccb3;
-	margin-right: 100px;
+	margin-right: 150px;
 }
